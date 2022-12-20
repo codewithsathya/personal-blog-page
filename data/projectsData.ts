@@ -11,6 +11,12 @@ const projectsData = [
     imgSrc: '/static/images/cryptotracker.png',
     href: 'https://cryptotracker.codewithsathya.com',
   },
+  {
+    title: 'Leetnotion',
+    description: `NodeJS app made with typescript to integrate leetcode into notion`,
+    imgSrc: '/static/images/leetnotion.png',
+    href: '/',
+  },
 ]
 
 export default projectsData
