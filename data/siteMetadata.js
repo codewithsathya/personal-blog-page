@@ -2,7 +2,7 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'CodeWithSathya Blog',
+  title: 'CodeWithSathya',
   author: 'Sathiya Seelan',
   headerTitle: 'CodeWithSathya',
   description: 'A blog created with Next.js and Tailwind.css',
@@ -16,7 +16,7 @@ const siteMetadata = {
   email: 'codewithsathya@gmail.com',
   github: 'https://github.com/codewithsathya',
   twitter: 'https://twitter.com/codewithsathiya',
-  facebook: 'https://www.facebook.com/myselfsathya',
+  // facebook: 'https://www.facebook.com/myselfsathya',
   linkedin: 'https://www.linkedin.com/in/myselfsathya/',
   locale: 'en-US',
   analytics: {

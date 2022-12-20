@@ -1,19 +1,15 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Photopia',
+    description: `A Social media app made with NodeJS for a Hackathon`,
+    imgSrc: '/static/images/photopia.png',
+    href: 'https://photopia.codewithsathya.com',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Cryptotracker',
+    description: `React app that shows change in price of cryptos in custom time frames.`,
+    imgSrc: '/static/images/cryptotracker.png',
+    href: 'https://cryptotracker.codewithsathya.com',
   },
 ]
 
