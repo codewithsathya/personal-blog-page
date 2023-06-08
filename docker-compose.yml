@@ -1,24 +1,18 @@
 version: '3'
 
 services:
-  nodejs:
+  next-app:
+    image: personal-website
+    container_name: personal-website
     build:
       context: .
       dockerfile: Dockerfile
-    image: personal-website
-    container_name: personal-website
-    restart: unless-stopped
+    restart: always
     env_file: .env
     ports:
-      - "8080:3001"
-    volumes:
-      - .:/home/node/app
-      - node_modules:/home/node/app/node_modules
+      - 8080:3001
     networks:
-      - personal-website-network
+      - my-network
 
 networks:
-  personal-website-network:
-
-volumes:
-  node_modules:
+  my-network:

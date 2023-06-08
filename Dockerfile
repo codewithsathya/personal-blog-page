@@ -1,16 +1,25 @@
 FROM node:18-alpine
-RUN npm install -g pnpm
-USER node
-RUN mkdir -p /home/node/app/node_modules
-WORKDIR /home/node/app
+WORKDIR /app
+COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
 
-COPY --chown=node:node package.json ./
-COPY --chown=node:node pnpm-lock.yaml ./
+RUN \
+  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
+  elif [ -f package-lock.json ]; then npm ci; \
+  elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i; \
+  else echo "Warning: Lockfile not found. It is recommended to commit lockfiles to version control." && yarn install; \
+  fi
 
-RUN pnpm install
+COPY . .
 
-COPY --chown=node:node . .
-EXPOSE 3001
+RUN \
+  if [ -f yarn.lock ]; then yarn build; \
+  elif [ -f package-lock.json ]; then npm run build; \
+  elif [ -f pnpm-lock.yaml ]; then pnpm build \
+  else yarn build; \
+  fi
 
-# RUN pnpm build
-CMD ["pnpm", "start"]
+CMD \
+  if [ -f yarn.lock ]; then yarn start; \
+  elif [ -f package-lock.json ]; then npm start; \
+  elif [ -f pnpm-lock.yaml ]; then pnpm start; \
+  fi
