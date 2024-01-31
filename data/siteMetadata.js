@@ -8,7 +8,7 @@ const siteMetadata = {
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://blog.codewithsathya.com',
+  siteUrl: 'https://codewithsathya.com',
   siteRepo: 'https://github.com/codewithsathya/personal-blog-page',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
@@ -17,7 +17,7 @@ const siteMetadata = {
   github: 'https://github.com/codewithsathya',
   twitter: 'https://twitter.com/codewithsathiya',
   // facebook: 'https://www.facebook.com/myselfsathya',
-  linkedin: 'https://www.linkedin.com/in/myselfsathya/',
+  linkedin: 'https://www.linkedin.com/in/codewithsathya/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

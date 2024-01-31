@@ -19,7 +19,7 @@ const Main = () => {
           </h1>
           <h2 className="text-gray-700 dark:text-gray-300">A Full-Stack Web Developer</h2>
           <p className="m-auto max-w-[70%] py-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
-            I&apos;m a full-stack web developer studying in IIT Bhubaneswar, India. I love
+            I&apos;m a full-stack developer working in Publicis Sapient, India. I love
             programming, reading tech blogs and learning new technologies.
           </p>
           {/* <div className="m-auto flex max-w-[330px] items-center justify-between py-4">
