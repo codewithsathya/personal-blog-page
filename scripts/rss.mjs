@@ -3,7 +3,7 @@ import siteMetadata from '../data/siteMetadata.js'
 import { allBlogs } from '../.contentlayer/generated/index.mjs'
 
 const rss = () => {
-  generateRSS(siteMetadata, allBlogs)
-  console.log('RSS feed generated...')
+    generateRSS(siteMetadata, allBlogs)
+    console.log('RSS feed generated...')
 }
 export default rss

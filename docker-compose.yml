@@ -1,18 +1,18 @@
 version: '3'
 
 services:
-  next-app:
-    image: personal-website
-    container_name: personal-website
-    build:
-      context: .
-      dockerfile: Dockerfile
-    restart: always
-    env_file: .env
-    ports:
-      - 8080:3001
-    networks:
-      - my-network
+    next-app:
+        image: personal-website
+        container_name: personal-website
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: always
+        env_file: .env
+        ports:
+            - 8080:3001
+        networks:
+            - my-network
 
 networks:
-  my-network:
+    my-network:
