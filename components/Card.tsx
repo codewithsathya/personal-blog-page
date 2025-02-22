@@ -1,7 +1,8 @@
 import Image from './Image'
 import Link from './Link'
+import GithubLogo from '@/data/githubLogo.png'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, github }) => (
     <div className="md max-w-[544px] p-4 md:w-1/2">
         <div
             className={`${
@@ -14,7 +15,7 @@ const Card = ({ title, description, imgSrc, href }) => (
                         <Image
                             alt={title}
                             src={imgSrc}
-                            className="object-cover object-center md:h-36 lg:h-48"
+                            className="object-cover object-center md:h-48 lg:h-72"
                             width={544}
                             height={400}
                         />
@@ -23,21 +24,37 @@ const Card = ({ title, description, imgSrc, href }) => (
                     <Image
                         alt={title}
                         src={imgSrc}
-                        className="object-cover object-center md:h-36 lg:h-48"
+                        className="object-cover object-center md:h-48 lg:h-72"
                         width={544}
                         height={400}
                     />
                 ))}
             <div className="p-6">
-                <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
-                    {href ? (
-                        <Link href={href} aria-label={`Link to ${title}`}>
-                            {title}
+                <div className='flex items-center space-x-2 mb-3'>
+                    <h2 className="mb-0 text-2xl font-bold leading-8 tracking-tight">
+                        {href ? (
+                            <Link href={href} aria-label={`Link to ${title}`}>
+                                {title}
+                            </Link>
+                        ) : (
+                            title
+                        )}
+                    </h2>
+                    {github && (
+                        <Link
+                            href={github}
+                            aria-label={`Link to ${title} GitHub`}
+                        >
+                            <Image
+                                src={GithubLogo}
+                                alt="Github"
+                                width={25}
+                                height={25}
+                                className="object-cover object-center"
+                            />
                         </Link>
-                    ) : (
-                        title
                     )}
-                </h2>
+                </div>
                 <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">
                     {description}
                 </p>

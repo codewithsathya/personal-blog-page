@@ -11,7 +11,7 @@ const Main = () => {
         <div id="home" className="h-[70vh] text-center">
             <div className="mx-auto flex h-full w-full max-w-[1240px] items-center justify-center p-2">
                 <div>
-                    <p className="text-sm uppercase tracking-widest text-gray-600 dark:text-gray-100">
+                    <p className="text-sm uppercase tracking-widest text-gray-600 dark:text-gray-100 md:mb-2">
                         Lets build something together
                     </p>
                     <h1 className="text-3xl font-extrabold leading-9 text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -56,6 +56,10 @@ const Main = () => {
                             <SocialIcon kind="youtube" href={siteMetadata.youtube} size={8} />
                             <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={8} />
                             <SocialIcon kind="twitter" href={siteMetadata.twitter} size={8} />
+                            <SocialIcon kind="leetcode" href={siteMetadata.leetcode} size={8} />
+                            <SocialIcon kind="codeforces" href={siteMetadata.codeforces} size={8} />
+                            <SocialIcon kind="gumroad" href={siteMetadata.gumroad} size={8} />
+                            <SocialIcon kind="buymeacoffee" href={siteMetadata.buymeacoffee} size={8} />
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,10 @@ import Facebook from './facebook.svg'
 import Youtube from './youtube.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
+import BuyMeACoffee from './buymeacoffee.svg'
+import Gumroad from './gumroad.svg'
+import Leetcode from './leetcode.svg'
+import Codeforces from './codeforces.svg'
 
 // Icons taken from: https://simpleicons.org/
 
@@ -14,6 +18,10 @@ const components = {
     youtube: Youtube,
     linkedin: Linkedin,
     twitter: Twitter,
+    buymeacoffee: BuyMeACoffee,
+    gumroad: Gumroad,
+    leetcode: Leetcode,
+    codeforces: Codeforces,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {

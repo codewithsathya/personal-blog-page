@@ -2,9 +2,9 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-    title: 'Sathiya',
+    title: 'CodeWithSathya',
     author: 'Sathiya Seelan',
-    headerTitle: 'SATHIYA.DEV',
+    headerTitle: 'CodeWithSathya.com',
     description: 'A blog created with Next.js and Tailwind.css',
     language: 'en-us',
     theme: 'system', // system, dark or light
@@ -15,16 +15,21 @@ const siteMetadata = {
     socialBanner: '/static/images/twitter-card.png',
     email: 'codewithsathya@gmail.com',
     github: 'https://github.com/codewithsathya',
-    twitter: 'https://twitter.com/codewithsathiya',
+    // twitter: 'https://twitter.com/codewithsathiya',
     // facebook: 'https://www.facebook.com/myselfsathya',
     linkedin: 'https://www.linkedin.com/in/codewithsathya/',
+    buymeacoffee: 'https://buymeacoffee.com/codewithsathya',
+    gumroad: 'https://codewithsathya.gumroad.com/',
+    leetcode: 'https://leetcode.com/u/codewithsathya/',
+    codeforces: 'https://codeforces.com/profile/sathiya',
+
     locale: 'en-US',
     analytics: {
         // If you want to use an analytics provider you have to add it to the
         // content security policy in the `next.config.js` file.
         // supports plausible, simpleAnalytics, umami or googleAnalytics
         plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
-        simpleAnalytics: false, // true or false
+        simpleAnalytics: true, // true or false
         umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
         posthogProjectApiKey: '', // e.g. AhnJK8392ndPOav87as450xd
         googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
@@ -35,8 +40,6 @@ const siteMetadata = {
         provider: 'buttondown',
     },
     comments: {
-        // If you want to use an analytics provider you have to add it to the
-        // content security policy in the `next.config.js` file.
         // Select a provider and use the environment variables associated to it
         // https://vercel.com/docs/environment-variables
         provider: 'giscus', // supported providers: giscus, utterances, disqus
